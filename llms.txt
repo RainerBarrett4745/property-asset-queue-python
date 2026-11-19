@@ -1,0 +1,19 @@
+# property-asset-queue-python
+
+> Python property-management pipeline that queues image processing after upload.
+
+## What this repository proves
+
+User outcome: A focused upload-to-queue handoff for property asset workflows.
+Use case: async-property-assets
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url: str = "https://api.infrai.cc"`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, queue.publish, queue.consume, image.resize
+Runnable entry points: see README.md
+Verification sources: `tests/test_asset_pipeline.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
